@@ -8,9 +8,9 @@
 /*********************************************************/
 
 /* Funciones de test */
-/* void testVolverMayuscula(void);
+void testVolverMayuscula(void);
 void testEsLetra(void);
-void testStringToMayuscula(void); */
+void testStringToMayuscula(void);
 
 /* Funciones del programa */
 int esLetra(char ch);
@@ -24,15 +24,30 @@ void stringToMayuscula(char s[]);
 /*********************************************************/
 
 
-int main(void) {
-    /* char str[50];
+int main(void) {/* 
+    char str[50];
+    
     printf("Ingrese una cadena: ");
     scanf("%s", str);
     stringToMayuscula(str);
-    printf("La cadena en mayúscula es %s\n:", str); */
-    testVolverMayuscula();
+    printf("La cadena en mayúscula es %s\n:", str);
+    /* testVolverMayuscula();
     testEsLetra();
     testStringToMayuscula(); 
+    return 0; */
+    
+    while (1)
+    {        
+        char str[50];        
+        printf("Entrada > ");
+        scanf("%s", str);
+        stringToMayuscula(str);
+        printf("%s\n", str);
+        /* testVolverMayuscula();
+        testEsLetra();
+        testStringToMayuscula();  */
+        
+    }
     return 0;
 }
 
