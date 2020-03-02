@@ -1,0 +1,4 @@
+1. Recibe caracteres hasta que se llegue al límite de la variable str (1000) o se mande la expresión fin del archivo (EOF). Cuando termine esto, el algoritmo procederá a imprimir todos los caracteres fuardados
+2. 	getchar(): Devuelve el siguiente carácter del buffer del teclado, o EOF en caso de error.
+	putchar(): Muestra un carácter en pantalla
+3. Que ocurra un error leyendo un caracter o que llegue al límite de la variable str

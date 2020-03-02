@@ -1,1 +1,1 @@
-# LaboratorioDeApuntadores
+# LaboratorioDeSistemasOperativos
