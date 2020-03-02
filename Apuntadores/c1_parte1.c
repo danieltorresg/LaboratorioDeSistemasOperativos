@@ -31,7 +31,7 @@ int main(void) {/*
     scanf("%s", str);
     stringToMayuscula(str);
     printf("La cadena en mayúscula es %s\n:", str);
-    /* testVolverMayuscula();
+    testVolverMayuscula();
     testEsLetra();
     testStringToMayuscula(); 
     return 0; */
@@ -88,17 +88,13 @@ void volverMayuscula(char *ch) {
 
 void stringToMayuscula(char s[]) {
     int i = 0;
-    while(s[i]!='!'){
+    while(i < strlen(s)){
         if (esLetra(s[i]))
         {
             volverMayuscula(&s[i]);
         }
         
         i += 1;
-        if (i == strlen(s))
-        {
-            i = 0;
-        } 
     }
 }
 
