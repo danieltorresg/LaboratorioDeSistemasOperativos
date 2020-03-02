@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 
 /*********************************************************/
@@ -13,7 +14,6 @@ void testStringToMayuscula(void); */
 
 /* Funciones del programa */
 int esLetra(char ch);
-int isalpha(int ch);
 int toupper(int ch);
 void volverMayuscula(char *ch);
 void stringToMayuscula(char s[]);
@@ -60,7 +60,7 @@ int esLetra(char ch) {
  *   @return void
  */
 void volverMayuscula(char *ch) {
-    toupper(*ch);
+    *ch = toupper(*ch);
 }
 
 

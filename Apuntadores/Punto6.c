@@ -5,12 +5,11 @@ void ordenacionShell(int vector[], int tamano);
 
 int main(){
     printf("Hola");
-    int vector[] = {6,1,5,2,3,4,0};
-    int tamano = sizeof(vector);
+    int vector[] = {100,1,10,2,3,7,0};
+    int tamano = sizeof(vector)/4;
     ordenacionShell(vector, tamano);
     int mediana = (tamano / 2) +1;
-    printf("La mediana es: %d", mediana);
-
+    printf("La mediana es: %d", vector[mediana]);
 }
 
 void ordenacionShell(int vector[], int tamano){
