@@ -25,14 +25,14 @@ void stringToMayuscula(char s[]);
 
 
 int main(void) {
-    char str[50];
+    /* char str[50];
     printf("Ingrese una cadena: ");
     scanf("%s", str);
     stringToMayuscula(str);
-    printf("La cadena en mayúscula es %s\n:", str);
-    /* testVolverMayuscula();
+    printf("La cadena en mayúscula es %s\n:", str); */
+    testVolverMayuscula();
     testEsLetra();
-    testStringToMayuscula(); */
+    testStringToMayuscula(); 
     return 0;
 }
 
@@ -85,4 +85,33 @@ void stringToMayuscula(char s[]) {
             i = 0;
         } 
     }
+}
+
+void testVolverMayuscula(void) {
+  char *p_char;
+  char l1 = 'a', l2 = 'z';
+  p_char = &l2;
+  printf("Minusculas -> %c, %c\n", l1, l2);
+  volverMayuscula(&l1);
+  volverMayuscula(p_char);
+  printf("Mayusculas -> %c, %c\n", l1, *p_char);
+}
+
+void testEsLetra(void) {
+  char c1 = '!', c2 = 's';
+  printf("%c -> %d\n", c1, esLetra(c1));
+  printf("%c -> %d\n", c2, esLetra(c2));
+}
+
+void testStringToMayuscula(void) {
+  char s1[] = "hola que mas!!!\n";
+  char s2[] = "1234 e_-+!!hay";
+  printf("Cadenas en minuscula -> \n");
+  printf("cadena 1: %s\n", s1);
+  printf("cadena 2: %s\n", s2);
+  stringToMayuscula(s1);
+  stringToMayuscula(s2);
+  printf("\nCadenas en mayuscula -> \n");
+  printf("cadena 1: %s\n", s1);
+  printf("cadena 2: %s\n", s2);
 }
