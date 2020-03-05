@@ -4,12 +4,17 @@
 void ordenacionShell(int vector[], int tamano);
 
 int main(){
-    printf("Hola");
+    printf("El vecctor es: \n");
     int vector[] = {100,1,10,2,3,7,0};
+    for (int i = 0; i < 7; i++)
+    {
+        printf("%d, ", vector[i]);
+    }    
+    printf("\n");
     int tamano = sizeof(vector)/4;
     ordenacionShell(vector, tamano);
-    int mediana = (tamano / 2) +1;
-    printf("La mediana es: %d", vector[mediana]);
+    int mediana = (tamano / 2);
+    printf("La mediana es: %d \n", vector[mediana]);
 }
 
 void ordenacionShell(int vector[], int tamano){

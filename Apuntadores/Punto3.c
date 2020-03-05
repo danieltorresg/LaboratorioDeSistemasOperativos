@@ -6,11 +6,12 @@ char *obtenerSubcadena(char *array, int index);
 
 
 int main() {
-
+    printf("Ingrese la cadena:");
+    char hola [20] = "Hola";
+    scanf("%s", hola);
     int num;
     printf("Ingrese el número para cortar:");
     scanf("%d", &num);
-    char hola [12] = "Hola que tal";
     char *subCadena;
     subCadena = obtenerSubcadena(hola, num);
     printf("\n Cadena :%s \n", subCadena);

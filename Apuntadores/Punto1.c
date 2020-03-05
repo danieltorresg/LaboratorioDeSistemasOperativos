@@ -3,9 +3,12 @@
 int contarCaracter(char *, char );
 
 int main() {
+    printf("Ingrese la cadena:");
+    char hola [20] = "Hola";
+    scanf("%s", hola);
+    printf("Ingrese el caracter a buscar en la palabra:");
     char letra;
-    scanf("%c", &letra);
-    char hola [4] = "Hola";
+    scanf(" %c", &letra);
     int cnt = contarCaracter(hola, letra);
     printf("El numero de veces que aparece es: %d \n", cnt);
 }

@@ -24,7 +24,7 @@ void stringToMayuscula(char s[]);
 /*********************************************************/
 
 
-int main(void) {/* 
+int main(void) { 
     char str[50];
     
     printf("Ingrese una cadena: ");
@@ -33,8 +33,8 @@ int main(void) {/*
     printf("La cadena en mayúscula es %s\n:", str);
     testVolverMayuscula();
     testEsLetra();
-    testStringToMayuscula(); 
-    return 0; */
+    testStringToMayuscula();
+    printf("Presione Ctrl + C para salir\n");
     
     while (1)
     {        
@@ -43,9 +43,6 @@ int main(void) {/*
         scanf("%s", str);
         stringToMayuscula(str);
         printf("%s\n", str);
-        /* testVolverMayuscula();
-        testEsLetra();
-        testStringToMayuscula();  */
         
     }
     return 0;
